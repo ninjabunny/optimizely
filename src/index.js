@@ -12,7 +12,7 @@ const optimizely = optimizelySDK.createInstance({
   sdkKey: 'AvNpyVSiJb4ZsB5R2Pv9Xc',
 })
 ReactDOM.render(
-  <OptimizelyProvider optimizely={optimizely} userId={window.userId}>
+  <OptimizelyProvider optimizely={optimizely} userId='user1234'>
     <App />
   </OptimizelyProvider>,
   document.getElementById('root'),
