@@ -4,9 +4,10 @@ import './App.css'
 import {
   OptimizelyExperiment,
   OptimizelyVariation,
+  withOptimizely,
 } from '@optimizely/react-sdk'
-
-function App() {
+function App(props) {
+  props.optimizely.track('app-init')
   return (
     <div className='App'>
       <header className='App-header'>
@@ -36,4 +37,4 @@ function App() {
   )
 }
 
-export default App
+export default withOptimizely(App)
