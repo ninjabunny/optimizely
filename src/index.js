@@ -6,8 +6,10 @@ import * as serviceWorker from './serviceWorker'
 import { OptimizelyProvider } from '@optimizely/react-sdk'
 import * as optimizelySDK from '@optimizely/js-web-sdk'
 
+// AvNpyVSiJb4ZsB5R2Pv9Xc
+
 const optimizely = optimizelySDK.createInstance({
-  datafile: window.datafile,
+  sdkKey: 'AvNpyVSiJb4ZsB5R2Pv9Xc',
 })
 ReactDOM.render(
   <OptimizelyProvider optimizely={optimizely} userId={window.userId}>
